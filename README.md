@@ -1,10 +1,13 @@
-Overview
+## Overview
+
 This project aims to enhance water distribution in Tanzania by identifying and repairing dysfunctional wells. It leverages data analysis to forecast patterns in non-operational wells, providing actionable insights for Maji Safi Global and the Tanzanian government.
 
-Problem Statement
+## Problem Statement
+
 Tanzania has faced significant issues with poorly planned water projects, resulting in wasted funds and insufficient access to clean water. Maji Safi Global, an NGO, collaborates with the Tanzanian government through the Visima Vyema initiative to improve water infrastructure by repairing dysfunctional wells and analyzing non-functional well patterns.
 
-Data Understanding
+## Data Understanding
+
 The dataset contains features that describe various aspects of the water wells, including geographic, managerial, and operational details. Key features include:
 
 amount_tsh: Total static head (water available)
@@ -15,19 +18,20 @@ installer: Organization that installed the well
 longitude & latitude: GPS coordinates
 population: Population around the well
 status_group: Functional status of the well (target variable)
-Data Cleaning
+
+## Data Cleaning
 Several columns were dropped due to irrelevance or redundancy. These include date_recorded, num_private, region_code, district_code, ward, extraction_type_group, extraction_type_class, management_group, payment_type, quality_group, quantity_group, source_type, waterpoint_type_group, and recorded_by.
 
-Exploratory Data Analysis (EDA)
+## Exploratory Data Analysis (EDA)
 EDA revealed outliers in amount_tsh, longitude, num_private, region_code, district_code, and population. Since some of these columns represent geographic locations, they were left unchanged, while others were investigated further.
 
-Feature Engineering
+## Feature Engineering
 Feature engineering involved transforming and encoding categorical variables, handling missing values, and scaling numerical features to prepare the data for model training.
 
-Model Training and Evaluation
+## Model Training and Evaluation
 Several machine learning models were trained and evaluated:
 
-Random Forest Classifier
+## Random Forest Classifier
 
 Accuracy: 80.38%
 Precision: 79.77%
