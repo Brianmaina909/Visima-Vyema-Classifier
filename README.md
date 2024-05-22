@@ -68,7 +68,7 @@ jupyter notebook Visima_Vyema_Classifier.ipynb
 Results
 The Random Forest model showed the best performance overall, with an accuracy of 80.38%. However, the classification of wells that need repair remains challenging, indicating a need for further data or model refinement.
 
-Conclusion
+## Conclusion
 This project successfully identified key factors affecting well functionality and provided a robust model for predicting well statuses. Future work will focus on improving the model's performance for wells that require repair.
 
 Contact
